@@ -9,6 +9,7 @@ on:
   workflow_call:
     secrets:
       MAPBOX_PRODUCTION:
+        required: false
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
