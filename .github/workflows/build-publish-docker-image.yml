@@ -7,9 +7,8 @@ name: Create and publish a Docker image
 
 on:
   workflow_call:
-    # secrets:
-    #   MAPBOX_PRODUCTION:
-    #     required: true
+    secrets:
+      MAPBOX_PRODUCTION:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
